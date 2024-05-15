@@ -1,5 +1,4 @@
 
-
 let timer;
 let hours = 0;
 let minutes = 0;
@@ -46,6 +45,12 @@ function updateTimer() {
   let formattedSeconds = String(seconds).padStart(2, '0');
 
   document.getElementById('timer').textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+
+  // Send the variable values to the second page
+  const secondPageIframe = document.querySelector('iframe');
+  if (secondPageIframe && secondPageIframe.contentWindow) {
+    secondPageIframe.contentWindow.postMessage({ hours, minutes, seconds }, '*');
+  }
 }
 
 window.onload = startTimer;
