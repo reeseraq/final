@@ -1,8 +1,14 @@
-body{
-margin:0px;
+body {
+  background-color: EBD1CC
+
 }
 
+p2 {
+  color: rgb(243, 29, 29); /* Change <p> text to green using RGB color values */
+}
 iframe {
-  width: 75vw;
-  height: 400px;
+  width: 70vw;
+  height: 450px;
+  margin: 30 auto;
+  display: block;
 }

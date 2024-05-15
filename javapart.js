@@ -10,5 +10,4 @@ function count() {
   s = s + 1
   counter.textContent = s
 }
-
 setInterval(count, 500)
