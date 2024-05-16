@@ -1,7 +1,7 @@
 let hours, minutes, seconds;
 
 function startTimer() {
-  const timerInterval = setInterval(updateTimer, 200);
+  const timerInterval = setInterval(updateTimer, 1000);
 
   function updateTimer() {
     seconds++;

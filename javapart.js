@@ -5,7 +5,7 @@ let minutes = 0;
 let seconds = 0;
 
 function startTimer() {
-  timerInterval = setInterval(updateTimer, 200);
+  timerInterval = setInterval(updateTimer, 1000);
   document.getElementById('startTimer').disabled = true;
   document.getElementById('stopTimer').disabled = false;
   document.getElementById('resetTimer').disabled = false;
